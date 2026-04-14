@@ -9,9 +9,10 @@ const { title, description, github } = Astro.props;
 ---
 
 <div
-        class="bg-blue-300 h-[30vh] w-[20vw] flex flex-col justify-evenly items-center p-3">
+        class="bg-blue-300 h-[30vh] w-[20vw] flex flex-col
+        justify-evenly items-center p-3 shadow-inner">
 
-    <h1 class="text-white">{title}</h1>
+    <h1 class="text-white text-lg font-bold">{title}</h1>
     <p class="text-white">{description}</p>
-    <a href={github}>Link to project!</a>
+    <a href={github} class="text-[#F7EE7F]">Link to project!</a>
 </div>

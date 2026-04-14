@@ -1,10 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Project from "../components/Project.astro"
+import { motion, useScroll } from "framer-motion"
+
+
 ---
 
-<Layout title="Min personlige nettside">
+<Layout title="Mats Kvanvik">
 	<div class="flex flex-col items-center justify-center h-[90vh]">
 
 		<ul class="text-[#F7EE7F] absolute top-5 left-5">
@@ -30,8 +32,19 @@ import Project from "../components/Project.astro"
 			description="This website is made as part of a course in learning Astro for web development"
 			github="https://github.com/B1uskyy/variant-astro-kurs"/>
 
-	</div>
+		<Project
+			title="Weather app"
+			description="One of my first simple attempts at using an API to fetch and display data with user input"
+			github="https://github.com/B1uskyy/Weather-App"
+		/>
 
+		<Project
+			title="Todo app"
+			description="An introduction to bundling with Webpack"
+			github="https://github.com/B1uskyy/Todo-list"
+		/>
+
+	</div>
 
 </Layout>
 
@@ -43,5 +56,7 @@ import Project from "../components/Project.astro"
 	hr {
 		color: #FB4D3D;
 	}
+
+	
 
 </style>

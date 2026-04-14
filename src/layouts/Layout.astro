@@ -16,8 +16,12 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="flex flex-col h-[100%]">
 		<slot />
+	<footer class="relative bottom-0 mt-auto text-center">
+		<hr>
+		<p class="text-white">© 2025 Mats Kvanvik. All rights reserved. </p>
+	</footer>
 	</body>
 </html>
 <style is:global>
